@@ -1,0 +1,12 @@
+body{
+    h3{
+        text-align: center;
+        color: brown;
+        text-shadow: 0cm;
+        text-transform: uppercase;
+        background color: rgb(253, 145, 13);
+        border-width: 5px;
+        border-radius:  20rem;
+
+    }
+}

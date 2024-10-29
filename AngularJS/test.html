@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <title>AngularJS</title>
+</head>
+<body>
+    <div ng-app="IHUB1" ng-controller="application1">
+        <fieldset>
+            <legend>FIlters in AngularJS</legend>
+            <center>
+                <h1><tt>My first_name is:{{first_name|lowercase}}</tt></h1>
+                <hr>
+                <h1><tt>My last_name is:{{last_name|uppercase}}</tt></h1>
+                <hr>
+                <h1><tt>My salary is :{{salary|currency}}</tt></h1>
+
+            </center>
+        </fieldset>
+        
+
+    </div>
+    <hr>
+    
+
+
+    <script>
+        var obj1 = angular.module("IHUB1",[])
+        obj1.controller("application1",function($scope)
+        {
+            $scope.first_name="Rahul"
+            $scope.last_name="Sharma"
+            $scope.salary=24000
+          
+        })
+    </script>
+
+    
+
+    
+     </body>
+</html>

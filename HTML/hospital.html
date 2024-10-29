@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Registration Form</title>
+    <link rel="icon" href="download.png" size="16x16">
+    <style>
+        
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;    
+}
+
+
+fieldset {
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 100%; 
+    
+}
+
+
+label{
+    margin: 10px 0;
+    font-size: 14px;
+}
+textarea {
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+input[type="text"], input[type="password"], input[type="email"], textarea {
+    width: 100%; 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+img {
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%; 
+}
+
+
+.center {
+    text-align: center;
+}
+
+    </style>
+  
+</head>
+<body>
+    <fieldset>
+        <legend>Registration Form</legend>
+        <form>
+            <h1>GVP HOSPITAL</h1>
+            <label for="name">Patient Name:</label>
+            <input type="text" name="name" placeholder="Enter your name">
+
+            <label for="age">Patient Age:</label>
+            <input type="password" name="password" placeholder="Enter your age">
+
+            <label for="Contact number">Contact Number:</label>
+            <input type="text" name="Contact number" placeholder="Enter your phone number">
+
+            <label for="Email">Email:</label>
+            <input type="email" name="Email" placeholder="Enter your Email ID">
+
+            <label for="address">Address:</label>
+            <textarea name="address" rows="3" placeholder="Enter your address"></textarea>
+
+            <label>Gender:</label>
+            <input type="radio" name="Gender" value="Male"> Male
+            <input type="radio" name="Gender" value="Female"> Female
+            <br><br>
+            <label>Marital Status:</label>
+            <input type="checkbox" name="marital status" value="Single"> Single
+            <input type="checkbox" name="marital status" value="Married"> Married<br><br>
+
+            <label>Nationality:</label>
+            <input type="radio" name="Nationality" value="Indian"> Indian
+            <input type="radio" name="Nationality" value="Others"> Others<br><br>
+
+            <label for="height">Height (cm):</label>
+            <input type="text" name="height" placeholder="Enter your height"><br><br>
+
+            <label for="weight">Weight (kg):</label>
+            <input type="text" name="weight" placeholder="Enter your weight"><br><br>
+
+            <h3 class="center">Services:</h3>
+            <div class="center">
+                <img src="images.jpeg" alt="Service Image 1" width="400px" height="350px">
+                <img src="download.jpeg" alt="Service Image 2" width="400px" height="350px">
+                <img src="ser.jpg" alt="Service Image 3" width="400px" height="350px">
+            </div>
+
+            <div class="center">
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
